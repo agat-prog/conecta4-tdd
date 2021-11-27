@@ -16,7 +16,11 @@ public class Lista<E> implements List<E> {
 
 	@Override
 	public boolean isEmpty() {
-		return true;
+	    if (items.length != 0) {
+	        return false;
+	    } else {
+	        return true;
+	    }
 	}
 
 	@Override
@@ -41,7 +45,8 @@ public class Lista<E> implements List<E> {
 
 	@Override
 	public boolean add(E e) {
-		return false;
+		this.items = new Object[] {e};
+		return true;
 	}
 
 	@Override

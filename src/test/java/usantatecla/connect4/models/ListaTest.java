@@ -13,4 +13,12 @@ public class ListaTest {
 
 	    Assert.assertTrue(list.isEmpty());
 	}
+	
+	@Test
+	public void givenNonEmptyListWhenIsEmptyThenReturnFalse() {
+	    List<Object> list = new Lista<>();
+	    list.add(null);
+
+	    Assert.assertFalse(list.isEmpty());
+	}
 }
