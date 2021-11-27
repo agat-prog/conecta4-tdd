@@ -54,4 +54,16 @@ public class ListaTest {
 
 	    Assert.assertTrue(list.contains("agat"));
 	}
+	
+	@Test
+	public void givenListWithAnElementWhenAnotherIsAddedThenGetReturnsBoth() {
+	    List<Object> list = new Lista<>();
+	    list.add("prueba_01");
+	    list.add("prueba_02");
+	    Object element1 = list.get(0);
+	    Object element2 = list.get(1);
+
+	    Assert.assertEquals("prueba_01", element1);
+	    Assert.assertEquals("prueba_02", element2);
+	}
 }

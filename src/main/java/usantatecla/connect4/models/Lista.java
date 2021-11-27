@@ -1,5 +1,6 @@
 package usantatecla.connect4.models;
 
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
@@ -46,7 +47,9 @@ public class Lista<E> implements List<E> {
 
 	@Override
 	public boolean add(E e) {
-		this.items = new Object[] {e};
+		Object[] temporal = Arrays.copyOf(this.items, this.items.length + 1);
+		temporal[this.items.length] = e;
+		this.items = temporal;
 		return true;
 	}
 
