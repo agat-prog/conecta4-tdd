@@ -16,11 +16,7 @@ public class Lista<E> implements List<E> {
 
 	@Override
 	public boolean isEmpty() {
-	    if (items.length != 0) {
-	        return false;
-	    } else {
-	        return true;
-	    }
+		return this.items.length == 0;
 	}
 
 	@Override
