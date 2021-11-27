@@ -29,4 +29,13 @@ public class ListaTest {
 
 	    Assert.assertEquals(1, list.size());
 	}
+	
+	@Test
+	public void givenListWithAnElementWhenGetThenThatElementIsReturned() {
+	    List<Object> list = new Lista<>();
+	    list.add("agat");
+	    Object element = list.get(0);
+
+	    Assert.assertEquals("agat", element);
+	}
 }

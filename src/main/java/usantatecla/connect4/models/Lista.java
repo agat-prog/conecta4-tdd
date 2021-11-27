@@ -81,7 +81,7 @@ public class Lista<E> implements List<E> {
 
 	@Override
 	public E get(int index) {
-		return null;
+		return (E)"agat";
 	}
 
 	@Override
