@@ -11,7 +11,11 @@ public class Lista<E> implements List<E> {
 
 	@Override
 	public int size() {
-		return 0;
+	    if (isEmpty()) {
+	        return 0;
+	    } else {
+	        return items.length;
+	    }
 	}
 
 	@Override

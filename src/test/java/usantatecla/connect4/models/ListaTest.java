@@ -21,4 +21,12 @@ public class ListaTest {
 
 	    Assert.assertFalse(list.isEmpty());
 	}
+	
+	@Test
+	public void givenListWithAnElementWhenSizeThenReturnOne() {
+	    List<Object> list = new Lista<>();
+	    list.add(null);
+
+	    Assert.assertEquals(1, list.size());
+	}
 }
