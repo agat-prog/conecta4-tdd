@@ -38,4 +38,12 @@ public class ListaTest {
 
 	    Assert.assertEquals("agat", element);
 	}
+	
+	@Test
+	public void givenEmptyListWhenElementIsAddedThenGetReturnsThatElement() {
+	    List<Object> list = new Lista<>();
+	    boolean succeeded = list.add(null);
+
+	    Assert.assertTrue(succeeded);
+	}
 }
