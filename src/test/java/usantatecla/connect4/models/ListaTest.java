@@ -46,4 +46,12 @@ public class ListaTest {
 
 	    Assert.assertTrue(succeeded);
 	}
+
+	@Test
+	public void givenNonEmptyListWhenContainsInListThenReturnTrue() {
+	    List<Object> list = new Lista<>();
+	    list.add("agat");
+
+	    Assert.assertTrue(list.contains("agat"));
+	}
 }
