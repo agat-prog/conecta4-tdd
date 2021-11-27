@@ -21,7 +21,12 @@ public class Lista<E> implements List<E> {
 
 	@Override
 	public boolean contains(Object o) {
-		return true;
+		for (Object obj : this.items) {
+			if (obj.equals(o)) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	@Override
